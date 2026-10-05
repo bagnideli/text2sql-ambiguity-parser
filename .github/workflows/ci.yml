@@ -1,0 +1,39 @@
+name: Project checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.23"
+          enable-cache: false
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Sync development dependencies
+        run: uv sync --locked
+
+      - name: Check code
+        run: uv run --locked --no-sync ruff check .
+
+      - name: Check formatting
+        run: uv run --locked --no-sync ruff format --check .
+
+      - name: Check package build
+        run: uv build

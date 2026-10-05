@@ -1,0 +1,52 @@
+# Python environments and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Build output
+build/
+dist/
+*.egg-info/
+
+# Local settings and credentials
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Datasets and experiment output
+/data/
+
+/artifacts/
+/mlruns/
+/mlartifacts/
+/outputs/
+/runs/
+/wandb/
+/lightning_logs/
+*.log
+
+# Model weights and large binary dumps
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+*.zip
+*.7z
+*.tar
+*.tar.gz
