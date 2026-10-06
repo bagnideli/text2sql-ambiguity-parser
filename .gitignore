@@ -25,6 +25,7 @@ dist/
 .DS_Store
 Thumbs.db
 Desktop.ini
+main_project_folder.code-workspace
 
 # Datasets and experiment output
 /data/

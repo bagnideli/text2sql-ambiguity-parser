@@ -96,12 +96,12 @@
 
 | Источник | Роль |
 |---|---|
-| [BIRD-Interact](https://bird-interact.github.io/) и связанный LiveSQLBench | Сценарии со схемами, документацией и бизнес-знаниями |
+| Foxy-Communication и связанный LiveSQLBench | Сценарии со схемами, документацией и бизнес-знаниями |
 | [PAUQ](https://github.com/ai-spiderweb/pauq) | Русские формулировки и контролируемые варианты |
 | [CLAMBSQL/CLEAR](https://github.com/mengzhang18/CLEAR), [AmbiQT](https://github.com/testzer0/AmbiQT) | Подходящие неоднозначные ситуации и дополнительное покрытие |
 | Новые русские сценарии | Необходимые сведения, бизнес-термины и случаи, недостаточно покрытые источниками |
 
-[AMBROSIA](https://ambrosia-benchmark.github.io/) рассматривается для дополнительной отложенной проверки; [RedSQL](https://github.com/BrodskaiaIrina/functional-text2sql-subsets) — резерв русской доменной проверки. Официальный BIRD-Interact оценивает полного SQL-помощника; для парсера неоднозначностей нужна отдельная процедура оценки.
+[AMBROSIA](https://ambrosia-benchmark.github.io/) рассматривается для дополнительной отложенной проверки; [RedSQL](https://github.com/BrodskaiaIrina/functional-text2sql-subsets) — резерв русской доменной проверки. Официальный Foxy-Communication оценивает полного SQL-помощника; для парсера неоднозначностей нужна отдельная процедура оценки.
 
 [NoisySP](https://drive.google.com/file/d/1iucIjvQ7K1X5hxHdtmWhOWORmAVhUVEV/view?usp=sharing) из проекта [DTE](https://github.com/wbbeyourself/DTE) также рассматривается как дополнительный источник данных; его пригодность для разметки по правилам проекта предстоит проверить.
 
